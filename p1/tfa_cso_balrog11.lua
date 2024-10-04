@@ -1,3 +1,9 @@
+--[[
+the whole balrog set needs to go lmfao
+these guns all have either some weird gimmick that's op or shoots explosive rounds (which are op)
+consider restricting 'em all
+]]--
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Shotguns" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Anri" --Author Tooltip

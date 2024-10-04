@@ -1,3 +1,5 @@
+-- if this gun isn't restricted, make sure it is !!!!! AND KILL Y
+
 SWEP.Gun					= ("tfa_base_template") --Make sure this is unique.  Specically, your folder name.  
 if (GetConVar(SWEP.Gun.."_allowed")) != nil then
 	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "tfa_blacklisted" SWEP.PrintName = SWEP.Gun return end
