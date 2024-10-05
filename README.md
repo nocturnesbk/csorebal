@@ -1,4 +1,5 @@
 # Balanced CS:O Weapons [for PvP]
+---
 the gmod CS:O / Nexon:Zombie guns are really fun but really overpowered for pvp
 
 this rebalance aims to make the guns viable & fun for pvp
