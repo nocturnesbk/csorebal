@@ -1,6 +1,6 @@
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Rifles" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author				= "Anri" --Author Tooltip
+SWEP.Author				= "Anri, modified by stxrgazer" --Author Tooltip
 SWEP.Contact				= "" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
 SWEP.Instructions				= "" --Instructions Tooltip
@@ -23,13 +23,13 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("GilboaViper.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 38					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 12					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 2 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.AmmoConsumption = 2 --Ammo consumed per shot
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 700					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 700					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 600					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 600					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = false
 
 -- nZombies Stuff
@@ -50,7 +50,7 @@ SWEP.DefaultFireMode 	= "" --Default to auto or whatev
 
 --Ammo Related
 
-SWEP.Primary.ClipSize			= 60					-- This is the size of a clip
+SWEP.Primary.ClipSize			= 40					-- This is the size of a clip
 SWEP.Primary.DefaultClip			= 300				-- This is the number of bullets the gun gives you, counting a clip as defined directly above.
 SWEP.Primary.Ammo			= "ar2"					-- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets

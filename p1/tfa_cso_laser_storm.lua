@@ -1,3 +1,7 @@
+--its always the damn gimmick that makes these guns lowkey terrible
+--this one has a alt fire thats a perfect acc no recoil laser
+--restricted, even though its pretty dang cool
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O SMGs" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Kamikaze, ★Bullet★" --Author Tooltip

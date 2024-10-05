@@ -24,7 +24,7 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("Lycanthrope.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage_Regular		= 70					-- Damage, in standard damage points.
+SWEP.Primary.Damage_Regular		= 16					-- Damage, in standard damage points.
 SWEP.Primary.Damage		= SWEP.Primary.Damage_Regular
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.Damage_Secondary		= 175				-- Damage, in standard damage points.

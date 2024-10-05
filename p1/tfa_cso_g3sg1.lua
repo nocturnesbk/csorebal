@@ -1,7 +1,10 @@
+--this gun is weird it's the auto sniper from css (duh) but im not sure whether i should
+-- balance it as a sniper or make it similar to a battle rifle (high dmg low firerate)
+-- hm... im gonna stick to my gut here and make it a br
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Sniper Rifles" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author				= "★Bullet★, Kamikaze" --Author Tooltip
-SWEP.Contact				= "" --Contact Info Tooltip
+SWEP.Author				= "★Bullet★, Kamikaze, modified by stxrgazer" --Author Tooltip
+SWEP.Contact				= "if you're reading this, put a comment on my profile lol" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
 SWEP.Instructions				= "" --Instructions Tooltip
 SWEP.Spawnable				= true --Can you, as a normal user, spawn this?
@@ -25,12 +28,12 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("G3SG1.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 75					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 34					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 240					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 240					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 200					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 200					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = true
 
 -- nZombies Stuff

@@ -1,3 +1,6 @@
+-- ohhh it's the fidget spinner grenade thing.
+-- gonna go ahead and restrict it because Bruh 
+
 -- Variables that are used on both client and server
 SWEP.Category				= "TFA CS:O Equipment"
 SWEP.Author				= "★Bullet★, Kamikaze"

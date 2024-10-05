@@ -1,3 +1,7 @@
+--holy shit the laser (altfire) on this thing is insane
+--im gonna restrict it, personally, but honestly i can see it being decent if you either
+-- 1) get rid of the laser, or 2) nerf the shit out of it
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Machine Guns" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Kamikaze" --Author Tooltip

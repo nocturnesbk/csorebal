@@ -23,12 +23,12 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("G11.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 28					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 16					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
 SWEP.Primary.RPM				= 800					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 2000					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 5000					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = true
 
 -- nZombies Stuff
@@ -41,11 +41,11 @@ SWEP.NZTotalBlackList	= false	-- if true, this gun can't be placed in the box, e
 
 -- Selective Fire Stuff
 
-SWEP.SelectiveFire		= true --Allow selecting your firemode?
+SWEP.SelectiveFire		= false --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
-SWEP.OnlyBurstFire		= false --No auto, only burst/single?
-SWEP.DefaultFireMode 	= "Auto" --Default to auto or whatev
-SWEP.FireModes = {"3Burst","Auto"}
+SWEP.OnlyBurstFire		= true --No auto, only burst/single?
+SWEP.DefaultFireMode 	= "3Burst" --Default to auto or whatev
+SWEP.FireModes = {"3Burst",}
 
 --Ammo Related
 

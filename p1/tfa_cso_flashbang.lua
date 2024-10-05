@@ -1,3 +1,6 @@
+--flashbang.
+--restricted
+
 -- Variables that are used on both client and server
 SWEP.Category				= "TFA CS:O Equipment"
 SWEP.Author				= "★Bullet★, Kamikaze"
