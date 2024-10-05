@@ -23,12 +23,12 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("Blaster.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 36					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 10					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 900					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 900					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 800					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 800					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = true
 
 -- nZombies Stuff
@@ -58,10 +58,10 @@ SWEP.Primary.Ammo			= "ar2"					-- What kind of ammo.  Options, besides custom, 
 SWEP.DisableChambering = true --Disable round-in-the-chamber
 
 --Recoil Related
-SWEP.Primary.KickUp			= 0.15				-- This is the maximum upwards recoil (rise)
-SWEP.Primary.KickDown			= 0.10					-- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal			= 0.16					-- This is the maximum sideways recoil (no real term)
-SWEP.Primary.StaticRecoilFactor = 0.3 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
+SWEP.Primary.KickUp			= 0.17				-- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickDown			= 0.12					-- This is the maximum downwards recoil (skeet)
+SWEP.Primary.KickHorizontal			= 0.18					-- This is the maximum sideways recoil (no real term)
+SWEP.Primary.StaticRecoilFactor = 0.5 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 
 --Firing Cone Related
 

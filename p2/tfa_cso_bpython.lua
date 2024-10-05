@@ -24,7 +24,7 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("Python.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 84					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 25					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= false					-- Automatic/Semi Auto
@@ -58,15 +58,15 @@ SWEP.Primary.Ammo			= "357"					-- What kind of ammo.  Options, besides custom, 
 SWEP.DisableChambering = true --Disable round-in-the-chamber
 
 --Recoil Related
-SWEP.Primary.KickUp			= 0.27					-- This is the maximum upwards recoil (rise)
-SWEP.Primary.KickDown			= 0.17					-- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal			= 0.015				-- This is the maximum sideways recoil (no real term)
-SWEP.Primary.StaticRecoilFactor = 0.4 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
+SWEP.Primary.KickUp			= 0.30					-- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickDown			= 0.20					-- This is the maximum downwards recoil (skeet)
+SWEP.Primary.KickHorizontal			= 0.018				-- This is the maximum sideways recoil (no real term)
+SWEP.Primary.StaticRecoilFactor = 0.8 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 
 --Firing Cone Related
 
-SWEP.Primary.Spread		= .00325					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .001625	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .00025					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .000625	-- Ironsight accuracy, should be the same for shotguns
 
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
 SWEP.Primary.SpreadMultiplierMax = 5 --How far the spread can expand when you shoot.
