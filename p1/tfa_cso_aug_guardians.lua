@@ -1,13 +1,13 @@
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Rifles" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author				= "Kamikaze, ★Bullet★" --Author Tooltip
+SWEP.Author				= "Anri, modified by stxrgzr" --Author Tooltip
 SWEP.Contact				= "" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
 SWEP.Instructions				= "" --Instructions Tooltip
 SWEP.Spawnable				= true --Can you, as a normal user, spawn this?
 SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
-SWEP.PrintName				= "AUG Guardians"		-- Weapon name (Shown on HUD)
+SWEP.PrintName				= "AUG Guardian"		-- Weapon name (Shown on HUD)
 SWEP.Slot				= 2				-- Slot in the weapon selection menu.  Subtract 1, as this starts at 0.
 SWEP.SlotPos				= 73			-- Position in the slot
 SWEP.DrawAmmo				= true		-- Should draw the default HL2 ammo counter if enabled in the GUI.
@@ -23,13 +23,13 @@ SWEP.ProceduralHolsterTime = 0
 --[[WEAPON HANDLING]]--
 
 --Firing related
-SWEP.Primary.Sound 			= Sound("AUG_Gs.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 85					-- Damage, in standard damage points.
+SWEP.Primary.Sound 			= Sound("Guardian.Fire")				-- This is the sound of the weapon, when you shoot.
+SWEP.Primary.Damage		= 34	-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 600					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 600					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 621 -- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 700					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = false
 
 -- nZombies Stuff
@@ -50,7 +50,7 @@ SWEP.DefaultFireMode 	= "" --Default to auto or whatev
 
 --Ammo Related
 
-SWEP.Primary.ClipSize			= 50					-- This is the size of a clip
+SWEP.Primary.ClipSize			= 30					-- This is the size of a clip
 SWEP.Primary.DefaultClip			= 350				-- This is the number of bullets the gun gives you, counting a clip as defined directly above.
 SWEP.Primary.Ammo			= "ar2"					-- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
@@ -58,10 +58,10 @@ SWEP.Primary.Ammo			= "ar2"					-- What kind of ammo.  Options, besides custom, 
 SWEP.DisableChambering = true --Disable round-in-the-chamber
 
 --Recoil Related
-SWEP.Primary.KickUp			= 0.1					-- This is the maximum upwards recoil (rise)
-SWEP.Primary.KickDown			= 0.075					-- This is the maximum downwards recoil (skeet)
-SWEP.Primary.KickHorizontal			= 0.01 			-- This is the maximum sideways recoil (no real term)
-SWEP.Primary.StaticRecoilFactor = 0.2 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
+SWEP.Primary.KickUp			= .3					-- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickDown			= .2					-- This is the maximum downwards recoil (skeet)
+SWEP.Primary.KickHorizontal			= 0.2 			-- This is the maximum sideways recoil (no real term)
+SWEP.Primary.StaticRecoilFactor = 0.4 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 
 --Firing Cone Related
 
@@ -108,7 +108,7 @@ SWEP.ProjectileModel = nil --Entity to shoot's model
 
 --[[VIEWMODEL]]--
 
-SWEP.ViewModel			= "models/weapons/tfa_cso/c_aug_guardians.mdl" --Viewmodel path
+SWEP.ViewModel			= "models/weapons/tfa_cso/c_guardian.mdl" --Viewmodel path
 SWEP.ViewModelFOV			= 80		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= true		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands = true --Use gmod c_arms system.
@@ -116,82 +116,16 @@ SWEP.VMPos = Vector(0,0,0) --The viewmodel positional offset, constantly.  Subtr
 SWEP.VMAng = Vector(0,0,0) --The viewmodel angular offset, constantly.   Subtract this from any other modifications to viewmodel angle.
 
 SWEP.VElements = {
-	["sprite_a"] = { type = "Model", model = "models/hunter/plates/plate1x1.mdl", bone = "Bone_h12", rel = "", pos = Vector(3, 0, 1.35), angle = Angle(180, 90, -30), size = Vector(0.175, 0.175, 0.0001), color = Color(255, 255, 255, 255), surpresslightning = false, material = "sprites/ef_y23s2buffaug_a", skin = 0, bodygroup = {}, active = false },
-	["sprite_b"] = { type = "Model", model = "models/hunter/plates/plate1x1.mdl", bone = "Bone_h12", rel = "", pos = Vector(2, -1, 1.5), angle = Angle(180, 90, -30), size = Vector(0.175, 0.175, 0.0001), color = Color(255, 255, 255, 255), surpresslightning = false, material = "sprites/ef_y23s2buffaug_b", skin = 0, bodygroup = {}, active = false }
+    ["smoke"] = { type = "Model", model = "models/hunter/plates/plate1x1.mdl", bone = "buffaug_root", rel = "", pos = Vector(6.517, -2.0, 0), angle = Angle(0, -180, 90), size = Vector(0.2, 0.2, 0.0001), color = Color(255, 255, 255, 255), surpresslightning = false, material = "sprites/aug_guardian_smoke", skin = 0, bodygroup = {} }
 }
 
---[[EVENT TABLE]]--
-
-SWEP.EventTable = {
-    [ACT_VM_IDLE] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = true
-            wep.VElements.sprite_b.active = false
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    },
-    [ACT_VM_DRAW] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = false
-            wep.VElements.sprite_b.active = false
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    },
-    [ACT_VM_PRIMARYATTACK] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = true
-            wep.VElements.sprite_b.active = false
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    },
-    [ACT_VM_ATTACH_SILENCER] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = false
-            wep.VElements.sprite_b.active = false
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    },
-    [ACT_VM_DETACH_SILENCER] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = false
-            wep.VElements.sprite_b.active = false
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    },
-    [ACT_VM_IDLE_SILENCED] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = false
-            wep.VElements.sprite_b.active = true
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    },
-    [ACT_VM_DRAW_SILENCED] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = false
-            wep.VElements.sprite_b.active = false
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    },
-    [ACT_VM_PRIMARYATTACK_SILENCED] = {
-        {time = 1 / 30, type = "lua", value = function(wep)
-            wep.VElements.sprite_a.active = false
-            wep.VElements.sprite_b.active = true
-            wep:ClearStatCache("VElements.sprite_a.active")
-            wep:ClearStatCache("VElements.sprite_b.active")
-        end}
-    }
+SWEP.Attachments = {
+    [1] = { atts = { "cso_buffaug_snowflake","cso_buffaugtyrannosaurus" } },
 }
 
 --[[WORLDMODEL]]--
 
-SWEP.WorldModel			= "models/weapons/tfa_cso/w_aug_guardians.mdl" -- I couldn't compile the Dark Knight's worldmodel either... why me
+SWEP.WorldModel			= "models/weapons/tfa_cso/w_guardian.mdl" -- I couldn't compile the Dark Knight's worldmodel either... why me
 
 SWEP.HoldType 				= "smg"		-- This is how others view you carrying the weapon. Options include:
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive
@@ -199,16 +133,16 @@ SWEP.HoldType 				= "smg"		-- This is how others view you carrying the weapon. O
 
 SWEP.Offset = { --Procedural world model animation, defaulted for CS:S purposes.
 		Pos = {
-		Up = -4.65,
-		Right = 1.25,
+		Up = -1.65,
+		Right = 0.25,
 		Forward = 5.5,
 		},
 		Ang = {
-		Up = 180,
-		Right = 15,
-		Forward = 180
+		Up = 90,
+		Right = 0,
+		Forward = 190
 		},
-		Scale = 1.0
+		Scale = 1.1
 }
 
 SWEP.ThirdPersonReloadDisable=false --Disable third person reload?  True disables.
@@ -231,13 +165,7 @@ SWEP.Secondary.UseMilDot			= false			 --Overlay option
 SWEP.Secondary.UseSVD			= false		 --Overlay option
 SWEP.Secondary.UseParabolic		= false		 --Overlay option
 SWEP.Secondary.UseElcan			= false	 --Overlay option
-SWEP.Secondary.UseGreenDuplex		= false		 --Overlay option
-
-SWEP.Secondary.ScopeTable = {
-	["ScopeMaterial"] =  Material("scope/aug_guardians/augguardian_scope_custom.png", "smooth"),
-	["ScopeBorder"] = Color(0,0,0,255),
-	["ScopeCrosshair"] = { ["r"] = 0, ["g"]  = 0, ["b"] = 0, ["a"] = 255, ["s"] = 0 }
-}
+SWEP.Secondary.UseGreenDuplex		= true		 --Overlay option
 
 --[[SHOTGUN CODE]]--
 
@@ -325,12 +253,12 @@ SWEP.ShellAttachment			= "2" 		-- Should be "2" for CSS models or "shell" for hl
 SWEP.DoMuzzleFlash = true --Do a muzzle flash?
 SWEP.CustomMuzzleFlash = true --Disable muzzle anim events and use our custom flashes?
 SWEP.AutoDetectMuzzleAttachment = false --For multi-barrel weapons, detect the proper attachment?
-SWEP.MuzzleFlashEffect = "cso_muz_des_wm" --Change to a string of your muzzle flash effect.  Copy/paste one of the existing from the base.
+SWEP.MuzzleFlashEffect = "cso_muz_grd" --Change to a string of your muzzle flash effect.  Copy/paste one of the existing from the base.
 
 --Tracer Stuff
 
 SWEP.Tracer				= 0		--Bullet tracer.  TracerName overrides this.
-SWEP.TracerName 		= "cso_tra_lyc_ex" 	--Change to a string of your tracer name.  Can be custom.
+SWEP.TracerName 		= "cso_tra_grd" 	--Change to a string of your tracer name.  Can be custom.
 								--There is a nice example at https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/effects/tooltracer.lua
 SWEP.TracerCount 		= 1 	--0 disables, otherwise, 1 in X chance
 
@@ -441,92 +369,21 @@ SWEP.CanSilencerDetachAnimate=false
 SWEP.ShouldDrawAmmoHUD=false--THIS IS PROCEDURALLY CHANGED AND SHOULD NOT BE TWEAKED.  BASE DEPENDENT VALUE.  DO NOT CHANGE OR THINGS MAY BREAK.  NO USE TO YOU.
 SWEP.DefaultFOV=90 --BASE DEPENDENT VALUE.  DO NOT CHANGE OR THINGS MAY BREAK.  NO USE TO YOU.
 
+--Disable secondary crap
+
+SWEP.Secondary.ClipSize			= 0					-- Size of a clip
+SWEP.Secondary.DefaultClip			= 0					-- Default ammo to give...
+SWEP.Secondary.Automatic			= false					-- Automatic/Semi Auto
+SWEP.Secondary.Ammo			= "none" -- Self explanitory, ammo type.
+
 SWEP.Base				= "tfa_gun_base"
 
 DEFINE_BASECLASS(SWEP.Base)
 function SWEP:Holster( ... )
-	self:StopSound("AUG_Gs.Idle1")
-	self:StopSound("AUG_Gs.Idle2")
+	self:StopSound("Guardian.Idle")
 	return BaseClass.Holster(self,...)
 end
 if CLIENT then
-	SWEP.WepSelectIconCSO = Material("vgui/killicons/tfa_cso_aug_guardians")
+	SWEP.WepSelectIconCSO = Material("vgui/killicons/tfa_cso_guardian")
 	SWEP.DrawWeaponSelection = TFA_CSO_DrawWeaponSelection
-end
-
-SWEP.NextGen = 0
-SWEP.Secondary.MaxAmmo = 80
-SWEP.Secondary.ClipSize	= -1 -- Size of a clip
-SWEP.Secondary.Ammo			= "heart" -- Self explanitory, ammo type.
-
-DEFINE_BASECLASS(SWEP.Base)
-function SWEP:Holster( ... )
-	self:StopSound("AUG_GS.Idle1")
-	self:StopSound("AUG_GS.Idle2")
-	return BaseClass.Holster(self,...)
-end
-
-function SWEP:Initialize()
-	BaseClass.Initialize(self)
-
-	self.StatCache_Blacklist["Primary.Damage"] = true
-	self.StatCache_Blacklist["MuzzleFlashEffectSilenced"] = true
-	self.StatCache_Blacklist["MuzzleFlashEffect"] = true
-	self.StatCache_Blacklist["TracerName"] = true
-
-	self:ClearStatCache()
-end
-
-function SWEP:AltAttack()
-    if self:Ammo2() < 40 and not self:GetSilenced() then return end
-	if not self:CanPrimaryAttack() then return end
-
-	if SERVER or not sp then
-		self:ChooseSilenceAnim( not self:GetSilenced() )
-		self:SetStatus(TFA.Enum.STATUS_SILENCER_TOGGLE)
-		self:SetStatusEnd(CurTime() + self:GetActivityLength( tanim ))
-
-		return
-	end
-end
-
-function SWEP:Think2(...)
-	if self:GetStatus() == TFA.Enum.STATUS_SILENCER_TOGGLE and self:GetStatusEnd() <= CurTime() then
-		-- condition is inverted since real status will be updated on BaseClass call
-		if self:GetSilenced() then
-			self.Primary_TFA.Damage = 85
-			self.MuzzleFlashEffect = "cso_muz_des_wm"
-			self.TracerName = "cso_tra_lyc_ex"
-		    self:ClearStatCache()
-		else
-			self.Primary_TFA.Damage = 180
-			self.MuzzleFlashEffectSilenced = "cso_muz_des_wm"
-			self.TracerName = "cso_tra_lyc_ex"
-		    self:ClearStatCache()
-		end
-	end
-	if self.Weapon:Ammo2() > self.Secondary.MaxAmmo then
-			self.Owner:SetAmmo( self.Secondary.MaxAmmo, self.Secondary.Ammo )
-	end
-	BaseClass.Think2(self, ...)
-end
-
-function SWEP:PostPrimaryAttack()
-self.NextGen = self.NextGen +1
-if SERVER then
-if self.NextGen >= 1 and not self:GetSilenced() and self:Ammo2() < 80 then
-self.Owner:GiveAmmo( 1, self.Secondary.Ammo, true )           
-self.NextGen  = 0
-end
-if self:Ammo2() < 2 and self:GetSilenced() then
-self:ChooseSilenceAnim( not self:GetSilenced() )
-self:SetStatus(TFA.Enum.STATUS_SILENCER_TOGGLE)
-self:SetStatusEnd(CurTime() + self:GetActivityLength( tanim ))
-end
-if self:GetSilenced() then
-self:TakeSecondaryAmmo(1)
-self.NextGen  = 0
-end
-BaseClass.PostPrimaryAttack(self)
-end
 end

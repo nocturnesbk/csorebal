@@ -24,9 +24,9 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("Batista.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 15					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 12					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
-SWEP.Primary.NumShots	= 12 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
+SWEP.Primary.NumShots	= 8 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= false					-- Automatic/Semi Auto
 SWEP.Primary.RPM				= 400					-- This is in Rounds Per Minute / RPM
 SWEP.Primary.RPM_Burst				= 5000					-- RPM for semi-automatic or burst fire. This is in Rounds Per Minute / RPM

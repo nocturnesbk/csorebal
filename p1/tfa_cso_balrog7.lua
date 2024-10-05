@@ -1,3 +1,5 @@
+-- i think the whole balrog set has to go. we'll see if XI is worth keeping
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Machine Guns" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Anri" --Author Tooltip
