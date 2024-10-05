@@ -1,3 +1,6 @@
+--pretty sure this is the explosive m3 cannon? so im gonna have it restricted
+--ill make sure later though lol
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Equipment" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Anri" --Author Tooltip

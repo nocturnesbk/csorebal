@@ -1,8 +1,8 @@
 SWEP.Base = "tfa_gun_base"
 SWEP.Category = "TFA CS:O Pistols" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author = "Anri" --Author Tooltip
+SWEP.Author = "Anri, modified by stxrgazer" --Author Tooltip
 SWEP.Contact = "" --Contact Info Tooltip
-SWEP.Purpose = "" --Purpose Tooltip
+SWEP.Purpose = "rclick reloads & switches hand! >:3, a fav of mine" --Purpose Tooltip
 SWEP.Instructions = "" --Instructions Tooltip
 SWEP.Spawnable = true --Can you, as a normal user, spawn this?
 SWEP.AdminSpawnable = true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
@@ -25,13 +25,15 @@ SWEP.ProceduralHolsterTime = 0
 --
 --Firing related
 SWEP.Primary.Sound = Sound("Desperado.Fire") -- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage = 120 -- Damage, in standard damage points.
+SWEP.Primary.Damage = 26 -- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots = 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic = true -- Automatic/Semi Auto
-SWEP.Primary.RPM = 600 -- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi = 600 -- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM = 350 -- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi = 350 -- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = true
+
+
 -- nZombies Stuff
 SWEP.NZWonderWeapon = true -- Is this a Wonder-Weapon? If true, only one player can have it at a time. Cheats aren't stopped, though.
 --SWEP.NZRePaPText		= "your text here"	-- When RePaPing, what should be shown? Example: Press E to your text here for 2000 points.
@@ -42,6 +44,8 @@ SWEP.NZTotalBlackList = false -- if true, this gun can't be placed in the box, e
 SWEP.PaPMats			= {true,true,nil,true,true,nil,nil,nil,nil,nil}
 
 SWEP.Sprint_Mode = TFA.Enum.LOCOMOTION_ANI
+
+
 -- Selective Fire Stuff
 SWEP.SelectiveFire = true --Allow selecting your firemode?
 SWEP.DisableBurstFire = true --Only auto/single?
@@ -59,7 +63,7 @@ SWEP.Primary.KickDown = 0.00 -- This is the maximum downwards recoil (skeet)
 SWEP.Primary.KickHorizontal = 0.0 -- This is the maximum sideways recoil (no real term)
 SWEP.Primary.StaticRecoilFactor = 0.5 --Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 --Firing Cone Related
-SWEP.Primary.Spread = .015 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.Spread = .1 --This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
 SWEP.Primary.IronAccuracy = .01 -- Ironsight accuracy, should be the same for shotguns
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
 SWEP.Primary.SpreadMultiplierMax = 1.5 --How far the spread can expand when you shoot.

@@ -1,3 +1,5 @@
+--getting restricted because these are a little dumb
+
 SWEP.Base = "tfa_melee_base"
 SWEP.Category = "TFA CS:O Melees"
 SWEP.PrintName = "Dual Sword Phantom Slayer"

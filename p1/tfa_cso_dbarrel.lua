@@ -1,6 +1,6 @@
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Shotguns" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author				= "Kamikaze" --Author Tooltip
+SWEP.Author				= "Kamikaze, modified by stxrgazer" --Author Tooltip
 SWEP.Contact				= "" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
 SWEP.Instructions				= "" --Instructions Tooltip
@@ -64,8 +64,8 @@ SWEP.Primary.StaticRecoilFactor = 0.28 	--Amount of recoil to directly apply to 
 
 --Firing Cone Related
 
-SWEP.Primary.Spread		= .040					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .040	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .080					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .080	-- Ironsight accuracy, should be the same for shotguns
 
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
 SWEP.Primary.SpreadMultiplierMax = 1 --How far the spread can expand when you shoot.

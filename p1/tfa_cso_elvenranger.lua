@@ -24,7 +24,7 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("ElvenRanger.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 1600					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 70					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= false					-- Automatic/Semi Auto
@@ -49,7 +49,7 @@ SWEP.DefaultFireMode 	= "" --Default to auto or whatev
 
 --Ammo Related
 
-SWEP.Primary.ClipSize			= 20					-- This is the size of a clip
+SWEP.Primary.ClipSize			= 10					-- This is the size of a clip
 SWEP.Primary.DefaultClip			= 120				-- This is the number of bullets the gun gives you, counting a clip as defined directly above.
 SWEP.Primary.Ammo			= "SniperPenetratedRound"					-- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets. XBowBolt for crossbow bolt
