@@ -1,3 +1,6 @@
+--FUCK THIS GRENADE LMFAOOOO
+--instant restrict
+
 -- Variables that are used on both client and server
 SWEP.Category				= "TFA CS:O Equipment"
 SWEP.Author				= ""

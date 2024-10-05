@@ -1,3 +1,5 @@
+--kind of annoying sound... also a grenade so i think it goes hmu if you think otherwise noc
+
 -- Variables that are used on both client and server
 SWEP.Category				= "TFA CS:O Equipment"
 SWEP.Author				= ""

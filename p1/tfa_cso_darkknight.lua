@@ -33,16 +33,16 @@ SWEP.PaPMats			= {}
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("DarkKnight.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage_Regular		= 65					-- Damage, in standard damage points.
+SWEP.Primary.Damage_Regular		= 20					-- Damage, in standard damage points.
 SWEP.Primary.Damage		= SWEP.Primary.Damage_Regular
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.DamageTypeHandled = false
 SWEP.Primary.BlastRadius	= 0 
-SWEP.Primary.Damage_Secondary		= 130				-- Damage, in standard damage points.
+SWEP.Primary.Damage_Secondary		= 20				-- Damage, in standard damage points.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 700					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 700					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 600					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 600					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = false
 
 -- Selective Fire Stuff

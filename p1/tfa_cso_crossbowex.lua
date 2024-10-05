@@ -1,3 +1,6 @@
+--redundant version (expert)
+--getting rid of this one as well
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Equipment" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Kamikaze" --Author Tooltip

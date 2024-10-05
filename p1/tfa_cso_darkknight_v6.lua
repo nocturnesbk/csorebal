@@ -1,3 +1,7 @@
+--sigh... there it is. the dark knight expert.
+--this gun is iconic as FUCK but it has to go.
+--oh well. goodbye, dark_knight_v6
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Rifles" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Kamikaze" --Author Tooltip

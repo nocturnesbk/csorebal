@@ -26,11 +26,11 @@ SWEP.ProceduralHolsterTime = 0
 --Firing related
 SWEP.Primary.Sound 			= Sound("Catapult.Fire")				-- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound			= Sound("Catapult.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 300 --effective damage				-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 10000 --effective damage				-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 28					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 20					-- This is in Rounds Per Minute / RPM
 SWEP.Primary.RPM_Semi				= 0					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = false
 
