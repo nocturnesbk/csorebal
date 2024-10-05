@@ -23,7 +23,7 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("Balrog5.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 45					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 25					-- Damage, in standard damage points.
 SWEP.DamageType = bit.bor(DMG_BULLET,DMG_BLAST,DMG_ALWAYSGIB) --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
@@ -65,8 +65,8 @@ SWEP.Primary.StaticRecoilFactor = 0.2 	--Amount of recoil to directly apply to E
 
 --Firing Cone Related
 
-SWEP.Primary.Spread		= .005					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .0025	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .1					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
 SWEP.Primary.SpreadMultiplierMax = 3.5 --How far the spread can expand when you shoot.

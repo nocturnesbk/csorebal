@@ -23,12 +23,12 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("As50.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 300					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 60					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 180					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 180					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 185					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 185					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = true
 
 -- nZombies Stuff
