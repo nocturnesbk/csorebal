@@ -1,9 +1,9 @@
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Shotguns" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author				= "Anri" --Author Tooltip
+SWEP.Author				= "Anri, modified (with love) by stxrgazer" --Author Tooltip
 SWEP.Contact				= "" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
-SWEP.Instructions				= "" --Instructions Tooltip
+SWEP.Instructions				= "Dedicated to Wooga, lol" --Instructions Tooltip
 SWEP.Spawnable				= true --Can you, as a normal user, spawn this?
 SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
@@ -28,8 +28,8 @@ SWEP.Primary.Damage		= 14					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 8 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 80					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 80					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM				= 100					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 100					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = false
 SWEP.Primary.AmmoConsumption	= 1
 
@@ -65,8 +65,8 @@ SWEP.Primary.StaticRecoilFactor = 0.3 	--Amount of recoil to directly apply to E
 
 --Firing Cone Related
 
-SWEP.Primary.Spread		= .0375					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .0375	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .0175					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .0175	-- Ironsight accuracy, should be the same for shotguns
 
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
 SWEP.Primary.SpreadMultiplierMax = 1 --How far the spread can expand when you shoot.
@@ -120,9 +120,7 @@ SWEP.VMAng = Vector(0,0,0) --The viewmodel angular offset, constantly.   Subtrac
 //	["spsmg"] = { scale = Vector(1, 1, 1), pos = Vector(0, -0.5, 0), angle = Angle(0, 0, 0) }
 //}
 
-SWEP.Attachments = {
-    [1] = { atts = { "cso_m1887elegant" } },
-}
+SWEP.Attachments = {}
 
 --[[WORLDMODEL]]--
 

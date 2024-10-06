@@ -1,3 +1,7 @@
+--stil a minigun
+--christmassy though
+--restricted
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Machine Guns" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "★Bullet★, Kamikaze" --Author Tooltip

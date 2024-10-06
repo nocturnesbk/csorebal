@@ -1,6 +1,6 @@
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Shotguns" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author				= "★Bullet★, Kamikaze" --Author Tooltip
+SWEP.Author				= "★Bullet★, Kamikaze, modified by stxrgazer" --Author Tooltip
 SWEP.Contact				= "" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
 SWEP.Instructions				= "" --Instructions Tooltip

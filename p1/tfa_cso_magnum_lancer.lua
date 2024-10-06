@@ -1,3 +1,7 @@
+--im not gonna lie, when i pulled out the gun in game and tested the right click
+--i immediately went back to vscode and restricted it.
+--bye forever, noob.
+
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Equipment" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Anri" --Author Tooltip

@@ -1,3 +1,15 @@
+--[[
+
+okay look im not gonna lie, these guns are really weird.
+i want to restrict them, ive personally never liked them, but they aren't like,
+inherently bad.
+
+auto shotgun with a melee altfire? not the worst thing in the world.
+
+restricting for *now* but if you're willing to balance it, then go for it.
+
+]]--
+
 SWEP.Base				= "tfa_bash_base"
 SWEP.Category				= "TFA CS:O Equipment" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
 SWEP.Author				= "Anri" --Author Tooltip

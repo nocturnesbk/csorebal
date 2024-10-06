@@ -1,9 +1,9 @@
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA CS:O Pistols" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep.
-SWEP.Author				= "Anri" --Author Tooltip
+SWEP.Author				= "Anri, modified by stxrgazer" --Author Tooltip
 SWEP.Contact				= "" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
-SWEP.Instructions				= "" --Instructions Tooltip
+SWEP.Instructions				= "Dedicated (loosely) to Cleo, lmfao" --Instructions Tooltip
 SWEP.Spawnable				= true --Can you, as a normal user, spawn this?
 SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
@@ -23,12 +23,12 @@ SWEP.ProceduralHolsterTime = 0
 
 --Firing related
 SWEP.Primary.Sound 			= Sound("MauserC96.Fire")				-- This is the sound of the weapon, when you shoot.
-SWEP.Primary.Damage		= 30					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 24					-- Damage, in standard damage points.
 SWEP.DamageType = DMG_BULLET --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
-SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 650					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 650				-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.Automatic			= false					-- Automatic/Semi Auto
+SWEP.Primary.RPM				= 400					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 400				-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.FiresUnderwater = false
 
 -- nZombies Stuff
@@ -44,7 +44,7 @@ SWEP.NZTotalBlackList	= false	-- if true, this gun can't be placed in the box, e
 SWEP.SelectiveFire		= false --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= false --No auto, only burst/single?
-SWEP.DefaultFireMode 	= "Auto" --Default to auto or whatev
+SWEP.DefaultFireMode 	= "Semi" --Default to auto or whatev
 
 --Ammo Related
 
